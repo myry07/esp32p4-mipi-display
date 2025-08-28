@@ -1,0 +1,92 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/wangjiaqi/Documents/Github/test/build/bootloader/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 /Users/wangjiaqi/Documents/Github/test/build/bootloader/bootloader.bin
+Bootloader binary size 0x5700 bytes. 0x900 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lvgl_port/show_video.c.obj
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+info: INFO: Symbol EXAMPLE_PIN_CMD defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:33
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:74
+info: INFO: Symbol EXAMPLE_PIN_CLK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:78
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:38
+info: INFO: Symbol EXAMPLE_PIN_D0 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:82
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:43
+info: INFO: Symbol EXAMPLE_PIN_D1 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:88
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:50
+info: INFO: Symbol EXAMPLE_PIN_D2 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:55
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:92
+info: INFO: Symbol EXAMPLE_PIN_D3 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:96
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:60
+[7/10] Linking CXX executable test.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32p4 image...
+Merged 2 ELF sections
+Successfully created esp32p4 image.
+Generated /Users/wangjiaqi/Documents/Github/test/build/test.bin
+[9/10] cd /Users/wangjiaqi/Documents/Github/test/build/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/wangjiaqi/Documents/Github/test/build/partition_table/partition-table.bin /Users/wangjiaqi/Documents/Github/test/build/test.bin
+test.bin binary size 0xb44e0 bytes. Smallest app partition is 0x800000 bytes. 0x74bb20 bytes (91%) free.
+[9/10] cd /Users/wangjiaqi/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/wangjiaqi/esp/esp-idf -D "SERIAL_TOOL=/Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python;;/Users/wangjiaqi/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32p4" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/wangjiaqi/Documents/Github/test/build -P /Users/wangjiaqi/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32p4 -p /dev/cu.usbmodem5A840380871 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader/bootloader.bin 0x10000 test.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/cu.usbmodem5A840380871
+Connecting....
+Chip is ESP32-P4 (revision v1.0)
+Features: High-Performance MCU
+Crystal is 40MHz
+MAC: 30:ed:a0:e1:af:35
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00002000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000c4fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22272 bytes to 13699...
+Writing at 0x00002000... (100 %)
+Wrote 22272 bytes (13699 compressed) at 0x00002000 in 0.7 seconds (effective 256.7 kbit/s)...
+Hash of data verified.
+Compressed 738528 bytes to 390380...
+Writing at 0x00010000... (4 %)
+Writing at 0x0001cc92... (8 %)
+Writing at 0x00024d05... (12 %)
+Writing at 0x0002c989... (16 %)
+Writing at 0x00033672... (20 %)
+Writing at 0x0003b1bc... (25 %)
+Writing at 0x000426ae... (29 %)
+Writing at 0x0004958a... (33 %)
+Writing at 0x0004f77d... (37 %)
+Writing at 0x00056410... (41 %)
+Writing at 0x0005c88e... (45 %)
+Writing at 0x00063f01... (50 %)
+Writing at 0x0006a216... (54 %)
+Writing at 0x000709da... (58 %)
+Writing at 0x00076f5e... (62 %)
+Writing at 0x00080f95... (66 %)
+Writing at 0x0008a1a6... (70 %)
+Writing at 0x0009066e... (75 %)
+Writing at 0x00097cb8... (79 %)
+Writing at 0x0009f175... (83 %)
+Writing at 0x000a55d4... (87 %)
+Writing at 0x000ae252... (91 %)
+Writing at 0x000b4e9d... (95 %)
+Writing at 0x000bc1fc... (100 %)
+Wrote 738528 bytes (390380 compressed) at 0x00010000 in 10.6 seconds (effective 557.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 120...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (120 compressed) at 0x00008000 in 0.1 seconds (effective 319.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

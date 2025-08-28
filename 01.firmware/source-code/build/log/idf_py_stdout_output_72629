@@ -1,0 +1,95 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/wangjiaqi/Documents/Github/test/build/bootloader/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 /Users/wangjiaqi/Documents/Github/test/build/bootloader/bootloader.bin
+Bootloader binary size 0x5700 bytes. 0x900 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/test.c.obj
+/Users/wangjiaqi/Documents/Github/test/main/test.c:87:13: warning: 'list_sdcard_dir' defined but not used [-Wunused-function]
+   87 | static void list_sdcard_dir(const char *path)
+      |             ^~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+info: INFO: Symbol EXAMPLE_PIN_CMD defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:33
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:74
+info: INFO: Symbol EXAMPLE_PIN_CLK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:78
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:38
+info: INFO: Symbol EXAMPLE_PIN_D0 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:82
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:43
+info: INFO: Symbol EXAMPLE_PIN_D1 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:50
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:88
+info: INFO: Symbol EXAMPLE_PIN_D2 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:55
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:92
+info: INFO: Symbol EXAMPLE_PIN_D3 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:96
+    /Users/wangjiaqi/Documents/Github/test/main/Kconfig.projbuild:60
+[7/10] Linking CXX executable test.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32p4 image...
+Merged 2 ELF sections
+Successfully created esp32p4 image.
+Generated /Users/wangjiaqi/Documents/Github/test/build/test.bin
+[9/10] cd /Users/wangjiaqi/Documents/Github/test/build/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/wangjiaqi/Documents/Github/test/build/partition_table/partition-table.bin /Users/wangjiaqi/Documents/Github/test/build/test.bin
+test.bin binary size 0xb2050 bytes. Smallest app partition is 0x800000 bytes. 0x74dfb0 bytes (91%) free.
+[9/10] cd /Users/wangjiaqi/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/wangjiaqi/esp/esp-idf -D "SERIAL_TOOL=/Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python;;/Users/wangjiaqi/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32p4" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/wangjiaqi/Documents/Github/test/build -P /Users/wangjiaqi/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32p4 -p /dev/cu.usbmodem5A840380871 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader/bootloader.bin 0x10000 test.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/cu.usbmodem5A840380871
+Connecting....
+Chip is ESP32-P4 (revision v1.0)
+Features: High-Performance MCU
+Crystal is 40MHz
+MAC: 30:ed:a0:e1:af:35
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00002000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000c2fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22272 bytes to 13699...
+Writing at 0x00002000... (100 %)
+Wrote 22272 bytes (13699 compressed) at 0x00002000 in 0.7 seconds (effective 256.7 kbit/s)...
+Hash of data verified.
+Compressed 729168 bytes to 385901...
+Writing at 0x00010000... (4 %)
+Writing at 0x0001cc58... (8 %)
+Writing at 0x00024a16... (12 %)
+Writing at 0x0002c4d3... (16 %)
+Writing at 0x0003321a... (20 %)
+Writing at 0x0003a9ee... (25 %)
+Writing at 0x00041ea5... (29 %)
+Writing at 0x00048dd8... (33 %)
+Writing at 0x0004f0af... (37 %)
+Writing at 0x00055c7f... (41 %)
+Writing at 0x0005c1a0... (45 %)
+Writing at 0x000636ff... (50 %)
+Writing at 0x00069bd0... (54 %)
+Writing at 0x00070311... (58 %)
+Writing at 0x000767b0... (62 %)
+Writing at 0x00081f27... (66 %)
+Writing at 0x00089b60... (70 %)
+Writing at 0x000904ea... (75 %)
+Writing at 0x000979ae... (79 %)
+Writing at 0x0009ea32... (83 %)
+Writing at 0x000a6662... (87 %)
+Writing at 0x000adb08... (91 %)
+Writing at 0x000b4a2e... (95 %)
+Writing at 0x000bbc33... (100 %)
+Wrote 729168 bytes (385901 compressed) at 0x00010000 in 10.4 seconds (effective 560.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 120...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (120 compressed) at 0x00008000 in 0.1 seconds (effective 315.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

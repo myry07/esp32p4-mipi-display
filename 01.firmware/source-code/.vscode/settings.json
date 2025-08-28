@@ -1,0 +1,14 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.openOcdConfigs": [
+    "board/esp32p4-builtin.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32p4"
+  },
+  "files.associations": {
+    "sdmmc_host.h": "c",
+    "stdio.h": "c",
+    "esp_jpeg_dec.h": "c"
+  }
+}
