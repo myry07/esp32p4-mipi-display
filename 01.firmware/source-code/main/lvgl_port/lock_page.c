@@ -98,9 +98,9 @@ lv_obj_t *page_lock_create(void)
     }
 
     s_time_label = lv_label_create(s_lock_page);
-    lv_obj_set_style_text_color(s_time_label, lv_color_black(), 0);
-    lv_obj_set_style_text_font(s_time_label, &lv_font_montserrat_26, 0);
-    lv_obj_align(s_time_label, LV_ALIGN_TOP_LEFT, 0, 30);
+    lv_obj_set_style_text_color(s_time_label, lv_color_white(), 0);
+    lv_obj_set_style_text_font(s_time_label, &lv_font_montserrat_40, 0);
+    lv_obj_align(s_time_label, LV_ALIGN_TOP_LEFT, 200, 30);
     lv_label_set_text(s_time_label, "09:00");
 
     lv_obj_t *bat_label = lv_label_create(s_lock_page);

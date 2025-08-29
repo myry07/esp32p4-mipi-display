@@ -8,10 +8,13 @@ lv_obj_t* show_jpg_on_canvas(lv_obj_t *parent, const char *jpg_path, int canvas_
 
 bool avi_play_start(const char *avi_path);
 bool avi_playlist_start(const char *dir_path, bool loop);
+
 void mp3_play_start(void);
+void avi_playlist_stop(void);
+void avi_play_stop_and_deinit(void);
 
 lv_obj_t *photo_album_create(const char *dir, int canvas_w, int canvas_h, bool loop);
-
+lv_obj_t *video_page_create(const char *path, bool is_dir, bool loop);
 
 // void load_page_cb(lv_event_t *e);
 

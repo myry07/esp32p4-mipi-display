@@ -473,7 +473,16 @@ static void album_event_cb(lv_event_t *e)
             else
             {
                 ESP_LOGI("gesture", "上滑");
-                // 这里暂不处理上滑；需要的话可加返回上一页/显示UI等
+                lv_obj_t *new_scr = page_main_create();
+                if (new_scr)
+                {
+                    // 让 LVGL 在动画完成后自动删掉旧屏，并触发 LV_EVENT_DELETE → 我们释放资源
+                    lv_scr_load_anim(new_scr, LV_SCR_LOAD_ANIM_MOVE_TOP, 50, 0, true /*auto_del*/);
+                }
+                else
+                {
+                    ESP_LOGE("gesture", "page_main_create() 返回 NULL，未切屏");
+                }
             }
         }
         break;

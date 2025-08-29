@@ -388,6 +388,7 @@ void app_main(void)
     lvgl_port_lock(0);
 
     lv_scr_load(page_lock_create());
+    // avi_play_start("/sdcard/nr/gc3.avi");
 
     lvgl_port_unlock();
 }

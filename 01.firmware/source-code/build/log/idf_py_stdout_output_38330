@@ -1,0 +1,250 @@
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x10f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x162c
+load:0x4ff2abd0,len:0xd6c
+load:0x4ff2cbd0,len:0x3308
+entry 0x4ff2abda
+[0;32mI (25) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Aug 29 2025 07:48:58[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (33) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00800000[0m
+[0;32mI (77) boot:  3 storage          Unknown data     01 82 00810000 00700000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=48090020 size=20cc4h (134340) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00030cec vaddr=30100000 size=0002ch (    44) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00030d20 vaddr=3010002c size=0003ch (    60) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00030d64 vaddr=4ff00000 size=0f2b4h ( 62132) load[0m
+[0;32mI (142) esp_image: segment 4: paddr=00040020 vaddr=48000020 size=852ach (545452) map[0m
+[0;32mI (235) esp_image: segment 5: paddr=000c52d4 vaddr=4ff0f2b4 size=06100h ( 24832) load[0m
+[0;32mI (241) esp_image: segment 6: paddr=000cb3dc vaddr=4ff15400 size=04374h ( 17268) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (251) boot: Disabling RNG early entropy source...[0m
+[0;32mI (261) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (261) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (261) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (262) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (267) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (271) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (275) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (280) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (284) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (289) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (293) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (298) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (302) MSPI DQS: tuning success, best phase id is 2[0m
+[0;32mI (484) MSPI DQS: tuning success, best delayline id is 10[0m
+I esp_psram: Found 32MB PSRAM device
+I esp_psram: Speed: 200MHz
+[0;32mI (501) mmu_psram: .rodata xip on psram[0m
+[0;32mI (549) mmu_psram: .text xip on psram[0m
+[0;32mI (549) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (549) cpu_start: Multicore app[0m
+[0;32mI (1472) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1481) cpu_start: Pro cpu start user code[0m
+[0;32mI (1481) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1482) app_init: Application information:[0m
+[0;32mI (1482) app_init: Project name:     source-code[0m
+[0;32mI (1486) app_init: App version:      3b5afd7-dirty[0m
+[0;32mI (1490) app_init: Compile time:     Aug 29 2025 18:43:23[0m
+[0;32mI (1496) app_init: ELF file SHA256:  df8dae1c4...[0m
+[0;32mI (1500) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (1504) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1508) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1512) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (1516) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1523) heap_init: At 4FF235B0 len 00017A10 (94 KiB): RAM[0m
+[0;32mI (1528) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1533) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1539) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1544) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1549) esp_psram: Adding pool of 31808K of PSRAM memory to heap allocator[0m
+[0;32mI (1556) spi_flash: detected chip: generic[0m
+[0;32mI (1559) spi_flash: flash io: dio[0m
+[0;33mW (1563) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1573) main_task: Started on CPU0[0m
+[0;32mI (1603) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1603) main_task: Calling app_main()[0m
+[0;32mI (1603) example: Initializing SD card[0m
+[0;32mI (1603) example: Using SDMMC peripheral[0m
+[0;33mW (1613) ldo: The voltage value 0 is out of the recommended range [500, 2700][0m
+[0;32mI (1613) example: Mounting filesystem[0m
+[0;32mI (1623) gpio: GPIO[43]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1633) gpio: GPIO[44]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1633) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1643) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1653) gpio: GPIO[41]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1663) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1903) gpio: GPIO[42]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1903) example: Filesystem mounted[0m
+Name: SD32G
+Type: SDHC
+Speed: 40.00 MHz (limit: 40.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=4
+[0;32mI (1913) example: MIPI DSI PHY Powered on[0m
+[0;32mI (1913) example: Install MIPI DSI LCD control panel[0m
+[0;32mI (1923) st7703: LCD ID: 38 21 1F[0m
+[0;32mI (2473) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (2473) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (2473) GT911: TouchPad_Config_Version:66[0m
+[0;32mI (2473) LVGL: Starting LVGL task[0m
+[1;31mE (2473) lcd_panel: esp_lcd_panel_swap_xy(50): swap_xy is not supported by this panel[0m
+[0;32mI (2903) main_task: Returned from app_main()[0m
+[0;32mI (22323) gesture: 上滑[0m
+[0;32mI (24143) btn: 点击事件[0m
+[0;32mI (26723) btn: 点击事件[0m
+[0;32mI (28913) btn: 点击事件[0m
+[0;32mI (34133) main_page: Video 被点击[0m
+[0;32mI (34133) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (34383) avifile: Find a video stream[0m
+[0;32mI (34383) avifile: Find a audio stream[0m
+[0;32mI (34383) avifile: movi pos:9906, size:30215944[0m
+framebuf0 in INTERNAL, framebuf1 in INTERNAL
+[1;31mE (37123) avi player: AVI player deinit timeout[0m
+[1;31mE (42433) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (42433) task_wdt:  - IDLE1 (CPU 1)[0m
+[1;31mE (42433) task_wdt: Tasks currently running:[0m
+[1;31mE (42433) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (42433) task_wdt: CPU 1: avi_player[0m
+[1;31mE (42433) task_wdt: Print CPU 1 backtrace[0m
+esp_backtrace_print: Print CPU 1 (current core) registers
+Core  1 register dump:
+MEPC    : 0x4802705e  RA      : 0x4800d2dc  SP      : 0x4ff355f0  GP      : 0x4ff15c00  
+TP      : 0x4ff356c0  T0      : 0x00000500  T1      : 0x00000000  T2      : 0x00000040  
+S0/FP   : 0x4ff23000  S1      : 0x63640000  A0      : 0x00000000  A1      : 0x00000000  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000004  A5      : 0x4ff23340  
+A6      : 0x4ff166d4  A7      : 0x000004c0  S2      : 0x4ff3567c  S3      : 0x4ff35678  
+S4      : 0x00060000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x4ff1676f  T4      : 0x00000010  T5      : 0x4ff663e0  T6      : 0x4ff35f30  
+MSTATUS : 0x00011888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000001  
+[1;31mE (47433) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (47433) task_wdt:  - IDLE1 (CPU 1)[0m
+[1;31mE (47433) task_wdt: Tasks currently running:[0m
+[1;31mE (47433) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (47433) task_wdt: CPU 1: avi_player[0m
+[1;31mE (47433) task_wdt: Print CPU 1 backtrace[0m
+esp_backtrace_print: Print CPU 1 (current core) registers
+Core  1 register dump:
+MEPC    : 0x4802705e  RA      : 0x4800d2dc  SP      : 0x4ff355f0  GP      : 0x4ff15c00  
+TP      : 0x4ff356c0  T0      : 0x00000500  T1      : 0x00000000  T2      : 0x00000040  
+S0/FP   : 0x4ff23000  S1      : 0x63640000  A0      : 0x00000000  A1      : 0x00000000  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000004  A5      : 0x4ff23340  
+A6      : 0x4ff166d4  A7      : 0x000004c0  S2      : 0x4ff3567c  S3      : 0x4ff35678  
+S4      : 0x00060000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x4ff1676f  T4      : 0x00000010  T5      : 0x4ff663e0  T6      : 0x4ff35f30  
+MSTATUS : 0x00011888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000001  
+[1;31mE (52433) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (52433) task_wdt:  - IDLE1 (CPU 1)[0m
+[1;31mE (52433) task_wdt: Tasks currently running:[0m
+[1;31mE (52433) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (52433) task_wdt: CPU 1: avi_player[0m
+[1;31mE (52433) task_wdt: Print CPU 1 backtrace[0m
+esp_backtrace_print: Print CPU 1 (current core) registers
+Core  1 register dump:
+MEPC    : 0x4802705e  RA      : 0x4800d2dc  SP      : 0x4ff355f0  GP      : 0x4ff15c00  
+TP      : 0x4ff356c0  T0      : 0x00000500  T1      : 0x00000000  T2      : 0x00000040  
+S0/FP   : 0x4ff23000  S1      : 0x63640000  A0      : 0x00000000  A1      : 0x00000000  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000004  A5      : 0x4ff23340  
+A6      : 0x4ff166d4  A7      : 0x000004c0  S2      : 0x4ff3567c  S3      : 0x4ff35678  
+S4      : 0x00060000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x4ff1676f  T4      : 0x00000010  T5      : 0x4ff663e0  T6      : 0x4ff35f30  
+MSTATUS : 0x00011888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000001  
+[1;31mE (57433) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (57433) task_wdt:  - IDLE1 (CPU 1)[0m
+[1;31mE (57433) task_wdt: Tasks currently running:[0m
+[1;31mE (57433) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (57433) task_wdt: CPU 1: avi_player[0m
+[1;31mE (57433) task_wdt: Print CPU 1 backtrace[0m
+esp_backtrace_print: Print CPU 1 (current core) registers
+Core  1 register dump:
+MEPC    : 0x4802705e  RA      : 0x4800d2dc  SP      : 0x4ff355f0  GP      : 0x4ff15c00  
+TP      : 0x4ff356c0  T0      : 0x00000500  T1      : 0x00000000  T2      : 0x00000040  
+S0/FP   : 0x4ff23000  S1      : 0x63640000  A0      : 0x00000000  A1      : 0x00000000  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000004  A5      : 0x4ff23340  
+A6      : 0x4ff166d4  A7      : 0x000004c0  S2      : 0x4ff3567c  S3      : 0x4ff35678  
+S4      : 0x00060000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x4ff1676f  T4      : 0x00000010  T5      : 0x4ff663e0  T6      : 0x4ff35f30  
+MSTATUS : 0x00011888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000001  
+[1;31mE (62433) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (62433) task_wdt:  - IDLE1 (CPU 1)[0m
+[1;31mE (62433) task_wdt: Tasks currently running:[0m
+[1;31mE (62433) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (62433) task_wdt: CPU 1: avi_player[0m
+[1;31mE (62433) task_wdt: Print CPU 1 backtrace[0m
+esp_backtrace_print: Print CPU 1 (current core) registers
+Core  1 register dump:
+MEPC    : 0x4802705e  RA      : 0x4800d2dc  SP      : 0x4ff355f0  GP      : 0x4ff15c00  
+TP      : 0x4ff356c0  T0      : 0x00000500  T1      : 0x00000000  T2      : 0x00000040  
+S0/FP   : 0x4ff23000  S1      : 0x63640000  A0      : 0x00000000  A1      : 0x00000000  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000004  A5      : 0x4ff23340  
+A6      : 0x4ff166d4  A7      : 0x000004c0  S2      : 0x4ff3567c  S3      : 0x4ff35678  
+S4      : 0x00060000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x4ff1676f  T4      : 0x00000010  T5      : 0x4ff663e0  T6      : 0x4ff35f30  
+MSTATUS : 0x00011888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000001  
+[1;31mE (67433) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (67433) task_wdt:  - IDLE1 (CPU 1)[0m
+[1;31mE (67433) task_wdt: Tasks currently running:[0m
+[1;31mE (67433) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (67433) task_wdt: CPU 1: avi_player[0m
+[1;31mE (67433) task_wdt: Print CPU 1 backtrace[0m
+esp_backtrace_print: Print CPU 1 (current core) registers
+Core  1 register dump:
+MEPC    : 0x4802705e  RA      : 0x4800d2dc  SP      : 0x4ff355f0  GP      : 0x4ff15c00  
+TP      : 0x4ff356c0  T0      : 0x00000500  T1      : 0x00000000  T2      : 0x00000040  
+S0/FP   : 0x4ff23000  S1      : 0x63640000  A0      : 0x00000000  A1      : 0x00000000  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000004  A5      : 0x4ff23340  
+A6      : 0x4ff166d4  A7      : 0x000004c0  S2      : 0x4ff3567c  S3      : 0x4ff35678  
+S4      : 0x00060000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x4ff1676f  T4      : 0x00000010  T5      : 0x4ff663e0  T6      : 0x4ff35f30  
+MSTATUS : 0x00011888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000001  
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x10f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x162c
+load:0x4ff2abd0,len:0xd6c
+load:0x4ff2cbd0,len:0x3308
+entry 0x4ff2abda
+[0;32mI (25) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Aug 29 2025 07:48:58[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (33) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00800000[0m
+[0;32mI (77) boot:  3 storage          Unknown data     01 82 00810000 00700000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=48090020 size=20cc4h (134340) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00030cec vaddr=30100000 size=0002ch (    44)

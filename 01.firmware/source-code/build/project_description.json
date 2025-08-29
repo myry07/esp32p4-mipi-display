@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "source-code",
-    "project_version":    "6c4ad29-dirty",
+    "project_version":    "3b5afd7-dirty",
     "project_path":       "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code",
     "idf_path":           "/Users/wangjiaqi/esp/esp-idf",
     "build_dir":          "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build",

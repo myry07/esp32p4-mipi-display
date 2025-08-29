@@ -12,6 +12,7 @@
     "esp_jpeg_dec.h": "c",
     "audio_player.h": "c",
     "esp_log.h": "c",
-    "bsp.h": "c"
+    "bsp.h": "c",
+    "ui.h": "c"
   }
 }
