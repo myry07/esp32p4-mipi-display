@@ -1,0 +1,96 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader/bootloader.bin
+Bootloader binary size 0x5700 bytes. 0x900 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lvgl_port/photo_album.c.obj
+/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/photo_album.c:345:13: warning: 'album_event_cb' defined but not used [-Wunused-function]
+  345 | static void album_event_cb(lv_event_t *e)
+      |             ^~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+info: INFO: Symbol EXAMPLE_PIN_CMD defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:74
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:33
+info: INFO: Symbol EXAMPLE_PIN_CLK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:38
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:78
+info: INFO: Symbol EXAMPLE_PIN_D0 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:82
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:43
+info: INFO: Symbol EXAMPLE_PIN_D1 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:88
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:50
+info: INFO: Symbol EXAMPLE_PIN_D2 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:55
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:92
+info: INFO: Symbol EXAMPLE_PIN_D3 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:96
+    /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/Kconfig.projbuild:60
+[7/10] Linking CXX executable source-code.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32p4 image...
+Merged 2 ELF sections
+Successfully created esp32p4 image.
+Generated /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/source-code.bin
+[9/10] cd /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/partition_table/partition-table.bin /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/source-code.bin
+source-code.bin binary size 0xbbbf0 bytes. Smallest app partition is 0x800000 bytes. 0x744410 bytes (91%) free.
+[9/10] cd /Users/wangjiaqi/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/wangjiaqi/esp/esp-idf -D "SERIAL_TOOL=/Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python;;/Users/wangjiaqi/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32p4" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build -P /Users/wangjiaqi/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32p4 -p /dev/cu.usbmodem5A840380871 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader/bootloader.bin 0x10000 source-code.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/cu.usbmodem5A840380871
+Connecting....
+Chip is ESP32-P4 (revision v1.0)
+Features: High-Performance MCU
+Crystal is 40MHz
+MAC: 30:ed:a0:e1:af:35
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00002000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000cbfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22272 bytes to 13705...
+Writing at 0x00002000... (100 %)
+Wrote 22272 bytes (13705 compressed) at 0x00002000 in 0.7 seconds (effective 254.6 kbit/s)...
+Hash of data verified.
+Compressed 769008 bytes to 403516...
+Writing at 0x00010000... (4 %)
+Writing at 0x0001ca4c... (8 %)
+Writing at 0x00024c7c... (12 %)
+Writing at 0x0002e489... (16 %)
+Writing at 0x000355c8... (20 %)
+Writing at 0x0003c77f... (24 %)
+Writing at 0x000437be... (28 %)
+Writing at 0x0004b216... (32 %)
+Writing at 0x0005267f... (36 %)
+Writing at 0x0005962a... (40 %)
+Writing at 0x0005f78b... (44 %)
+Writing at 0x00065de9... (48 %)
+Writing at 0x0006c9d4... (52 %)
+Writing at 0x000732f0... (56 %)
+Writing at 0x0007a447... (60 %)
+Writing at 0x00080ab4... (64 %)
+Writing at 0x00086f8b... (68 %)
+Writing at 0x0008fb9f... (72 %)
+Writing at 0x0009a200... (76 %)
+Writing at 0x000a056f... (80 %)
+Writing at 0x000a7ca4... (84 %)
+Writing at 0x000af23b... (88 %)
+Writing at 0x000b5600... (92 %)
+Writing at 0x000bdee8... (96 %)
+Writing at 0x000c4f63... (100 %)
+Wrote 769008 bytes (403516 compressed) at 0x00010000 in 10.9 seconds (effective 566.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 120...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (120 compressed) at 0x00008000 in 0.1 seconds (effective 314.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

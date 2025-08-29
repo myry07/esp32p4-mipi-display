@@ -375,13 +375,6 @@ void app_main(void)
     // Card has been initialized, print its properties
     sdmmc_card_print_info(stdout, card);
 
-    ESP_LOGI(TAG, "666");
-    ESP_LOGE(TAG, "666");
-    ESP_LOGW(TAG, "666");
-
-    // ESP_LOGI(TAG, "Listing contents of /sdcard/nr");
-    // list_sdcard_dir("/sdcard/nr");
-
     /* LCD HW initialization */
     ESP_ERROR_CHECK(app_lcd_init());
 
@@ -394,32 +387,7 @@ void app_main(void)
     /* Show LVGL objects */
     lvgl_port_lock(0);
 
-    // lv_demo_music();
-    // lv_demo_benchmark();
-    // lv_demo_widgets();
-
-    // show_jpg_on_canvas("/sdcard/nr/S.JPG", 540, 720);
-    // avi_play_start("/sdcard/nr/test1.avi");
-
-    // avi_playlist_start("/sdcard/nr", true);
-
-    // ui_lock_page_create();
-
-    lv_obj_t *page = photo_album_create("/sdcard/nr",
-                                        EXAMPLE_LCD_H_RES,
-                                        EXAMPLE_LCD_V_RES,
-                                        true);
-    if (page)
-    {
-        lv_scr_load(page);
-    }
-    else
-    {
-        // 兜底：给出错误提示
-        lv_obj_t *err = lv_label_create(lv_scr_act());
-        lv_label_set_text(err, "No JPG found or decode failed");
-        lv_obj_center(err);
-    }
+    lv_scr_load(page_lock_create());
 
     lvgl_port_unlock();
 }

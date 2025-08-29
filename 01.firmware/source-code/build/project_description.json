@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "source-code",
-    "project_version":    "ad20f1f-dirty",
+    "project_version":    "6c4ad29-dirty",
     "project_path":       "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code",
     "idf_path":           "/Users/wangjiaqi/esp/esp-idf",
     "build_dir":          "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build",
@@ -1390,7 +1390,7 @@
             "managed_reqs": [ "lvgl__lvgl" ],
             "managed_priv_reqs": [ "chmorgan__esp-audio-player", "chmorgan__esp-file-iterator", "chmorgan__esp-libhelix-mp3", "espressif__avi_player", "espressif__esp_codec_dev", "espressif__esp_lcd_touch_gt911", "espressif__esp_lvgl_port", "espressif__esp_new_jpeg" ],
             "file": "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/esp-idf/main/libmain.a",
-            "sources": [ "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/main.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/main_page.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/lock_page.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/show_jpg.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/video_player.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/photo_album.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/audio_player.c" ],
+            "sources": [ "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/main.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/main_page.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/lock_page.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/show_jpg.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/video_player.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/photo_album.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/audio_player.c", "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/main/lvgl_port/page_manager.c" ],
             "include_dirs": [ ".", "lvgl_port/include" ]
         },
         "mbedtls": {

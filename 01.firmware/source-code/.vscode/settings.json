@@ -10,6 +10,8 @@
     "sdmmc_host.h": "c",
     "stdio.h": "c",
     "esp_jpeg_dec.h": "c",
-    "audio_player.h": "c"
+    "audio_player.h": "c",
+    "esp_log.h": "c",
+    "bsp.h": "c"
   }
 }

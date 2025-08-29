@@ -1,0 +1,281 @@
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x10f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x162c
+load:0x4ff2abd0,len:0xd6c
+load:0x4ff2cbd0,len:0x3308
+entry 0x4ff2abda
+[0;32mI (25) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Aug 29 2025 07:48:58[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v1.0[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (33) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00800000[0m
+[0;32mI (77) boot:  3 storage          Unknown data     01 82 00810000 00700000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=48090020 size=201f4h (131572) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0003021c vaddr=30100000 size=0002ch (    44) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=00030250 vaddr=3010002c size=0003ch (    60) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00030294 vaddr=4ff00000 size=0fd84h ( 64900) load[0m
+[0;32mI (142) esp_image: segment 4: paddr=00040020 vaddr=48000020 size=82de8h (536040) map[0m
+[0;32mI (233) esp_image: segment 5: paddr=000c2e10 vaddr=4ff0fd84 size=04cd8h ( 19672) load[0m
+[0;32mI (239) esp_image: segment 6: paddr=000c7af0 vaddr=4ff14a80 size=04334h ( 17204) load[0m
+[0;32mI (248) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (248) boot: Disabling RNG early entropy source...[0m
+[0;32mI (259) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (259) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (259) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (260) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (264) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (269) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (273) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (278) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (282) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (286) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (291) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (296) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (300) MSPI DQS: tuning success, best phase id is 2[0m
+[0;32mI (482) MSPI DQS: tuning success, best delayline id is 10[0m
+I esp_psram: Found 32MB PSRAM device
+I esp_psram: Speed: 200MHz
+[0;32mI (499) mmu_psram: .rodata xip on psram[0m
+[0;32mI (546) mmu_psram: .text xip on psram[0m
+[0;32mI (547) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (547) cpu_start: Multicore app[0m
+[0;32mI (1470) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1479) cpu_start: Pro cpu start user code[0m
+[0;32mI (1479) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1479) app_init: Application information:[0m
+[0;32mI (1479) app_init: Project name:     source-code[0m
+[0;32mI (1484) app_init: App version:      6c4ad29-dirty[0m
+[0;32mI (1488) app_init: Compile time:     Aug 29 2025 15:59:19[0m
+[0;32mI (1493) app_init: ELF file SHA256:  77706fa4a...[0m
+[0;32mI (1498) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (1502) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1506) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1510) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (1514) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1521) heap_init: At 4FF22BB0 len 00018410 (97 KiB): RAM[0m
+[0;32mI (1526) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1531) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1536) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1542) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1547) esp_psram: Adding pool of 31808K of PSRAM memory to heap allocator[0m
+[0;32mI (1554) spi_flash: detected chip: generic[0m
+[0;32mI (1557) spi_flash: flash io: dio[0m
+[0;33mW (1560) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1571) main_task: Started on CPU0[0m
+[0;32mI (1601) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1601) main_task: Calling app_main()[0m
+[0;32mI (1601) example: Initializing SD card[0m
+[0;32mI (1601) example: Using SDMMC peripheral[0m
+[0;33mW (1611) ldo: The voltage value 0 is out of the recommended range [500, 2700][0m
+[0;32mI (1611) example: Mounting filesystem[0m
+[0;32mI (1621) gpio: GPIO[43]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1631) gpio: GPIO[44]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1631) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1641) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1651) gpio: GPIO[41]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1661) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1851) gpio: GPIO[42]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1861) example: Filesystem mounted[0m
+Name: SD32G
+Type: SDHC
+Speed: 40.00 MHz (limit: 40.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=4
+[0;32mI (1871) example: MIPI DSI PHY Powered on[0m
+[0;32mI (1871) example: Install MIPI DSI LCD control panel[0m
+[0;32mI (1881) st7703: LCD ID: 38 21 1F[0m
+[0;32mI (2431) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (2431) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (2431) GT911: TouchPad_Config_Version:66[0m
+[0;32mI (2431) LVGL: Starting LVGL task[0m
+[1;31mE (2431) lcd_panel: esp_lcd_panel_swap_xy(50): swap_xy is not supported by this panel[0m
+[0;32mI (2861) main_task: Returned from app_main()[0m
+[0;32mI (7071) gesture: 上滑[0m
+open /sdcard/bg/bk2.JPG failed
+[0;32mI (8641) main_page: Picture 被点击[0m
+[0;32mI (9841) gesture: 右滑[0m
+[0;32mI (11051) gesture: 右滑[0m
+[0;31mE (11051) JPEG_DEC: JPEG parse SOI segment fail.[0m
+[album] parse hdr fail
+[0;32mI (12311) gesture: 右滑[0m
+[0;32mI (13391) gesture: 右滑[0m
+[0;31mE (13391) JPEG_DEC: JPEG parse SOI segment fail.[0m
+[album] parse hdr fail
+[0;32mI (14651) gesture: 右滑[0m
+[0;32mI (15701) gesture: 右滑[0m
+[0;31mE (15701) JPEG_DEC: JPEG parse SOI segment fail.[0m
+[album] parse hdr fail
+[0;32mI (17501) gesture: 右滑[0m
+[0;32mI (18841) gesture: 上滑[0m
+[0;32mI (21151) gesture: 上滑[0m
+[0;32mI (22021) gesture: 下滑[0m
+[0;32mI (24151) gesture: 上滑[0m
+open /sdcard/bg/bk2.JPG failed
+[0;32mI (25771) gesture: 下滑[0m
+[0;32mI (57171) gesture: 右滑[0m
+[0;32mI (58251) gesture: 上滑[0m
+open /sdcard/bg/bk2.JPG failed
+[0;32mI (59241) main_page: Picture 被点击[0m
+Guru Meditation Error: Core  0 panic'ed (Instruction access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x00000100  RA      : 0x48010458  SP      : 0x4ff31800  GP      : 0x4ff15280  
+TP      : 0x4ff319e0  T0      : 0x4fc0a9f8  T1      : 0x4ff0175a  T2      : 0x00000000  
+S0/FP   : 0x4ff31834  S1      : 0x00000000  A0      : 0x4ff1a168  A1      : 0x4ff31834  
+A2      : 0x00000000  A3      : 0x0000000c  A4      : 0x00000004  A5      : 0x00000101  
+A6      : 0x00000001  A7      : 0x0000000a  S2      : 0x4ff31834  S3      : 0x00000000  
+S4      : 0x4ff19f18  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x000001cb  T5      : 0x00000000  T6      : 0x0000012a  
+MSTATUS : 0x00011880  MTVEC   : 0x4ff00003  MCAUSE  : 0x00000001  MTVAL   : 0x00000100  
+MHARTID : 0x00000000  
+
+0x00000100 in ?? ()
+#0  0x00000100 in ?? ()
+#1  0x48010458 in lv_obj_event_base (class_p=<optimized out>, e=0x4ff31834) at /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/components/lvgl__lvgl/src/core/lv_event.c:96
+#2  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+
+
+ELF file SHA256: 77706fa4a
+
+Rebooting...
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x10f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff045a0
+Core1 Saved PC:0x4ff046fc
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x162c
+load:0x4ff2abd0,len:0xd6c
+load:0x4ff2cbd0,len:0x3308
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Aug 29 2025 07:48:58[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (37) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00800000[0m
+[0;32mI (85) boot:  3 storage          Unknown data     01 82 00810000 00700000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=48090020 size=201f4h (131572) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0003021c vaddr=30100000 size=0002ch (    44) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030250 vaddr=3010002c size=0003ch (    60) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00030294 vaddr=4ff00000 size=0fd84h ( 64900) load[0m
+[0;32mI (144) esp_image: segment 4: paddr=00040020 vaddr=48000020 size=82de8h (536040) map[0m
+[0;32mI (220) esp_image: segment 5: paddr=000c2e10 vaddr=4ff0fd84 size=04cd8h ( 19672) load[0m
+[0;32mI (224) esp_image: segment 6: paddr=000c7af0 vaddr=4ff14a80 size=04334h ( 17204) load[0m
+[0;32mI (233) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (233) boot: Disabling RNG early entropy source...[0m
+[0;32mI (245) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (246) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (246) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (246) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (251) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (256) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (260) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (265) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (269) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (273) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (278) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (283) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (287) MSPI DQS: tuning success, best phase id is 2[0m
+[0;32mI (469) MSPI DQS: tuning success, best delayline id is 10[0m
+I esp_psram: Found 32MB PSRAM device
+I esp_psram: Speed: 200MHz
+[0;32mI (486) mmu_psram: .rodata xip on psram[0m
+[0;32mI (533) mmu_psram: .text xip on psram[0m
+[0;32mI (534) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (535) cpu_start: Multicore app[0m
+[0;32mI (1457) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1467) cpu_start: Pro cpu start user code[0m
+[0;32mI (1467) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1467) app_init: Application information:[0m
+[0;32mI (1467) app_init: Project name:     source-code[0m
+[0;32mI (1471) app_init: App version:      6c4ad29-dirty[0m
+[0;32mI (1476) app_init: Compile time:     Aug 29 2025 15:59:19[0m
+[0;32mI (1481) app_init: ELF file SHA256:  77706fa4a...[0m
+[0;32mI (1485) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (1490) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1494) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1498) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (1502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1508) heap_init: At 4FF22BB0 len 00018410 (97 KiB): RAM[0m
+[0;32mI (1513) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1518) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1524) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1529) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1534) esp_psram: Adding pool of 31808K of PSRAM memory to heap allocator[0m
+[0;32mI (1541) spi_flash: detected chip: generic[0m
+[0;32mI (1545) spi_flash: flash io: dio[0m
+[0;33mW (1548) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1558) main_task: Started on CPU0[0m
+[0;32mI (1588) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1588) main_task: Calling app_main()[0m
+[0;32mI (1588) example: Initializing SD card[0m
+[0;32mI (1588) example: Using SDMMC peripheral[0m
+[0;33mW (1598) ldo: The voltage value 0 is out of the recommended range [500, 2700][0m
+[0;32mI (1598) example: Mounting filesystem[0m
+[0;32mI (1608) gpio: GPIO[43]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1618) gpio: GPIO[44]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1618) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1628) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1638) gpio: GPIO[41]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1648) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1838) gpio: GPIO[42]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1848) example: Filesystem mounted[0m
+Name: SD32G
+Type: SDHC
+Speed: 40.00 MHz (limit: 40.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=4
+[0;32mI (1858) example: MIPI DSI PHY Powered on[0m
+[0;32mI (1858) example: Install MIPI DSI LCD control panel[0m
+[0;32mI (1868) st7703: LCD ID: 38 21 1F[0m
+[0;32mI (2418) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (2418) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (2418) GT911: TouchPad_Config_Version:66[0m
+[0;32mI (2418) LVGL: Starting LVGL task[0m
+[1;31mE (2418) lcd_panel: esp_lcd_panel_swap_xy(50): swap_xy is not supported by this panel[0m
+[0;32mI (2848) main_task: Returned from app_main()[0m
+[0;32mI (6308) gesture: 上滑[0m
+open /sdcard/bg/bk2.JPG failed
+[0;32mI (7518) main_page: Picture 被点击[0m
+[0;32mI (9018) gesture: 右滑[0m
+[0;32mI (20068) gesture: 右滑[0m
+[0;31mE (20068) JPEG_DEC: JPEG parse SOI segment fail.[0m
+[album] parse hdr fail
+[0;32mI (21538) gesture: 右滑[0m
+[0;32mI (23038) gesture: 右滑[0m
+[0;31mE (23038) JPEG_DEC: JPEG parse SOI segment fail.[0m
+[album] parse hdr fail
+[0;32mI (24328) gesture: 右滑[0m
+[0;32mI (29128) gesture: 左滑[0m
+[0;31mE (29128) JPEG_DEC: JPEG parse SOI segment fail.[0m
+[album] parse hdr fail
+[0;32mI (31228) gesture: 左滑[0m
+[0;32mI (33778) gesture: 左滑[0m
+[
