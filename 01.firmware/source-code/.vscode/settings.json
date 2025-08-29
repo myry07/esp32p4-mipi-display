@@ -9,6 +9,7 @@
   "files.associations": {
     "sdmmc_host.h": "c",
     "stdio.h": "c",
-    "esp_jpeg_dec.h": "c"
+    "esp_jpeg_dec.h": "c",
+    "audio_player.h": "c"
   }
 }

@@ -1,2 +1,2 @@
-source /Users/wangjiaqi/Documents/Github/test/build/gdbinit/symbols
-source /Users/wangjiaqi/Documents/Github/test/build/gdbinit/connect
+source /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/gdbinit/symbols
+source /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/gdbinit/connect

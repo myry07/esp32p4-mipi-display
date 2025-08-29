@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/test/build/CMakeFiles/bootloader"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/test/build/CMakeFiles/bootloader.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/test/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 

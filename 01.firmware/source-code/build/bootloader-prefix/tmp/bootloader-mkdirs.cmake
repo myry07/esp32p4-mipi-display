@@ -10,18 +10,18 @@ if(NOT EXISTS "/Users/wangjiaqi/esp/esp-idf/components/bootloader/subproject")
   file(MAKE_DIRECTORY "/Users/wangjiaqi/esp/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/Users/wangjiaqi/Documents/Github/test/build/bootloader"
-  "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix"
-  "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/tmp"
-  "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src/bootloader-stamp"
-  "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src"
-  "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader"
+  "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix"
+  "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/tmp"
+  "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src"
+  "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/wangjiaqi/Documents/Github/test/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

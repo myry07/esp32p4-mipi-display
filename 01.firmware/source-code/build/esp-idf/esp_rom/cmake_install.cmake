@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/wangjiaqi/Documents/Github/test/build/esp-idf/esp_rom/install_local_manifest.txt"
+  file(WRITE "/Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/esp-idf/esp_rom/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

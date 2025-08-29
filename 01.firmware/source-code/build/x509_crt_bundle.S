@@ -1,4 +1,4 @@
-/* * Data converted from /Users/wangjiaqi/Documents/Github/test/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

@@ -1,4 +1,38 @@
 dependencies:
+  chmorgan/esp-audio-player:
+    component_hash: c8ac1998e9af863bc41b57e592f88d1a5791a0f891485122336ddabbf7a65033
+    dependencies:
+    - name: chmorgan/esp-libhelix-mp3
+      registry_url: https://components.espressif.com
+      require: private
+      version: '>=1.0.0,<2.0.0'
+    - name: idf
+      require: private
+      version: '>=5.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.0.7
+  chmorgan/esp-file-iterator:
+    component_hash: 327091394b9ef5c2cd395a960ab70ae64479e0a8831cbd9925e38895fad93719
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.1.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.0.0
+  chmorgan/esp-libhelix-mp3:
+    component_hash: cbb76089dc2c5749f7b470e2e70aedc44c9da519e04eb9a67d4c7ec275229e53
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.1.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.0.3
   espressif/avi_player:
     component_hash: abe07cedb7e90c4eebfd4cf93825727d5ed341f065bb2e2932d33d648b4474a7
     dependencies:
@@ -23,6 +57,16 @@ dependencies:
       registry_url: https://components.espressif.com
       type: service
     version: 1.1.1
+  espressif/esp_codec_dev:
+    component_hash: 3a1df01ee46d64c55155341bb6f4834db33db7dbd9b637e476e1eab64d01295a
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.4.0
   espressif/esp_lcd_touch:
     component_hash: 779b4ba2464a3ae85681e4b860caa5fdc35801458c23f3039ee761bae7f442a4
     dependencies:
@@ -84,16 +128,20 @@ dependencies:
   lvgl/lvgl:
     dependencies: []
     source:
-      path: /Users/wangjiaqi/Documents/Github/test/components/lvgl__lvgl
+      path: /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/components/lvgl__lvgl
       type: local
     version: 8.4.0
 direct_dependencies:
+- chmorgan/esp-audio-player
+- chmorgan/esp-file-iterator
+- chmorgan/esp-libhelix-mp3
 - espressif/avi_player
+- espressif/esp_codec_dev
 - espressif/esp_lcd_touch_gt911
 - espressif/esp_lvgl_port
 - espressif/esp_new_jpeg
 - idf
 - lvgl/lvgl
-manifest_hash: 28dc34ae13514957b4c1b960c7eb324b9215e6daa03d9924811025be8030940d
+manifest_hash: b35cf4018ae45bf40f41557dedcb291e0d5ac0649eb0f536c680e1c233701023
 target: esp32p4
 version: 2.0.0

@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: /Users/wangjiaqi/Documents/Github/test/build/esp-idf/esp_system/ld/sections.ld.in */
+/* Generated from: /Users/wangjiaqi/Documents/Github/esp32p4-mipi-display/01.firmware/source-code/build/esp-idf/esp_system/ld/sections.ld.in */
 
 /*
  * SPDX-FileCopyrightText: 2022 Espressif Systems (Shanghai) CO LTD

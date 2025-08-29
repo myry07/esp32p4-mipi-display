@@ -6,8 +6,16 @@ dependencies:
     version: "8.4.*"
     public: true
 
+  # 视频 / 图像组件
   espressif/avi_player: =*
   espressif/esp_new_jpeg: =*
+
+  # 音频播放组件
+  chmorgan/esp-audio-player: "^1.0.0"
+  chmorgan/esp-libhelix-mp3: "^1.0.0"
+  chmorgan/esp-file-iterator: "^1.0.0"
+  espressif/esp_codec_dev: "^1.0.3"
+  
   idf:
     version: ">=4.1.0"
   
